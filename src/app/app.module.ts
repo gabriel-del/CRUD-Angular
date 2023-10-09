@@ -4,16 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './components/template/header.component';
+import { HeaderComponent } from './components/template/header';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import { FooterComponent } from './components/template/footer.component';
-import { NavComponent } from './components/template/nav.component'
+import { FooterComponent } from './components/template/footer';
+import { NavComponent } from './components/template/nav'
 import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatListModule } from '@angular/material/list';
-import { HomeComponent } from './views/home.component'
+import { HomeComponent } from './views/home'
 import {MatCardModule} from '@angular/material/card';
-import { ProductCrudComponent } from './views/product-crud.component';
-import { CreateComponent } from './components/product/create.component';
+import { ProductCrudComponent } from './views/product-crud';
+import { Create } from './components/product/create';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { CreateComponent } from './components/product/create.component';
     NavComponent,
     HomeComponent,
     ProductCrudComponent,
-    CreateComponent
+    Create
   ],
   imports: [
     BrowserModule,
