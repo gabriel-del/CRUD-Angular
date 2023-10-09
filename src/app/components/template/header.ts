@@ -29,4 +29,4 @@ import { Component } from '@angular/core';
       }
     </style>`
 })
-export class HeaderComponent {}
+export class Header {}

@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from "./views/home"
-import { ProductCrudComponent } from "./views/product-crud"
+import { Home } from "./views/home"
+import { ProductCrud } from "./views/product-crud"
 
 const routes: Routes = [
-  { path: "", component: HomeComponent},
-  { path: "products", component: ProductCrudComponent}
+  { path: "", component: Home},
+  { path: "products", component: ProductCrud}
 ]
 
 @NgModule({

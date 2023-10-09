@@ -29,4 +29,4 @@ import { Component } from '@angular/core';
       }
     </style>
   `})
-export class NavComponent {}
+export class Nav {}

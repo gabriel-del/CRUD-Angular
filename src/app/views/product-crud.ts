@@ -6,10 +6,5 @@ import { Component } from '@angular/core';
     <p>
       product-crud works!
     </p>
-  `,
-  styles: [
-  ]
-})
-export class ProductCrudComponent {
-
-}
+  `})
+export class ProductCrud {}

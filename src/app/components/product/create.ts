@@ -6,10 +6,6 @@ import { Component } from '@angular/core';
     <p>
       create works!
     </p>
-  `,
-  styles: [
-  ]
+  `
 })
-export class Create {
-
-}
+export class Create {}

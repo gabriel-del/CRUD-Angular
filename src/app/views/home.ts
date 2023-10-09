@@ -16,10 +16,6 @@ import { Component } from '@angular/core';
         font-size: 1.1rem;
       }
     </style>
-  `,
-  styles: [
-  ]
+  `
 })
-export class HomeComponent {
-
-}
+export class Home {}

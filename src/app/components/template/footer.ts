@@ -19,10 +19,6 @@ import { Component } from '@angular/core';
         font-weight: 300;
       }
     </style>
-  `,
-  styles: [
-  ]
+  `
 })
-export class FooterComponent {
-
-}
+export class Footer {}
