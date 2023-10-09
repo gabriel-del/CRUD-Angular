@@ -5,12 +5,13 @@ import { Component } from '@angular/core';
   template: `
     <mat-toolbar class="mat-elevation-z4">
       <span class="logo">
-        <a><img src="assets/img/logo.png" alt="logo"></a>
+        <a routerLink="/"><img src="assets/img/logo.png" alt="logo"></a>
       </span>
       <span class="title">
-        <a><i class="material-icons">home</i>Aplicação Crud</a>
+        <a><i class="material-icons">home</i>Início</a>
       </span>
     </mat-toolbar>
+
     <style>
       mat-toolbar {
         display:flex;

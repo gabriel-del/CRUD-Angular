@@ -11,15 +11,15 @@ import { Component } from '@angular/core';
             </mat-nav-list>
         </mat-sidenav>
         <mat-sidenav-content>
-          <app-home></app-home>
+          <router-outlet></router-outlet>
         </mat-sidenav-content>
     </mat-sidenav-container>
+
     <style>
       mat-sidenav {
           background-color: #3F51B5;
           width: 200px;
         } mat-sidenav  span{
-        /* background-color: #F00; */
         color: #FFF
       } mat-sidenav i {
         padding-right: 10px;
@@ -28,10 +28,5 @@ import { Component } from '@angular/core';
         background-color: #FFF;
       }
     </style>
-  `,
-  styles: [
-  ]
-})
-export class NavComponent {
-
-}
+  `})
+export class NavComponent {}
