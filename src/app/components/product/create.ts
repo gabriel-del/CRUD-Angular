@@ -4,13 +4,13 @@ import { ProductService } from './product.service';
 @Component({
   selector: 'app-create',
   template: `
-  <p>Create Works!</p>
+  <p [id]="propLegal">Create Works!</p>
   <button (click)="fazerAlgo()">Fazer Algo!</button>
   `
 })
 export class Create implements OnInit{
   constructor() {  }
-  atributoLegal = 'qualquer'
+  propLegal = 'qualquer'
   fazerAlgo(): void {
     console.log('fazendo algo...')
   }
