@@ -9,4 +9,5 @@ export class ProductService {
   showOnConsole(msg: string): void {
     console.log(msg)
   }
+  array = [1, 5, 6]
 }
