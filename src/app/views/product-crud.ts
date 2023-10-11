@@ -4,9 +4,14 @@ import { Router } from '@angular/router'
 @Component({
   selector: 'app-product-crud',
   template: `
-    <button mat-raised-button (click)="navigateToProductCreate()">
-      Novo produto
-    </button>
+    <button mat-raised-button (click)="navigateToProductCreate()" color="primary">Novo produto</button>
+    <app-read></app-read>
+    <style>
+      button {
+        margin-bottom: 30px;
+      }
+    </style>
+
   `})
 export class ProductCrud implements OnInit{
   constructor (private router: Router) {}

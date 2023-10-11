@@ -21,6 +21,7 @@ import { Nav } from './components/template/nav'
 import { Create } from './components/product/create';
 import { Home } from './views/home'
 import { ProductCrud } from './views/product-crud';
+import { Read } from './components/product/read';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProductCrud } from './views/product-crud';
     Nav,
     Home,
     ProductCrud,
-    Create
+    Create,
+    Read
   ],
   imports: [
     BrowserModule,
