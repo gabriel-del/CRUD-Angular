@@ -8,10 +8,16 @@ import { Product } from './model';
     <p>
       read works!
     </p>
+    <ul>
+      <li *ngFor="let product of products">
+        {{ product.name }}
+
+      </li>
+    </ul>
   `
 })
 export class Read implements OnInit {
-  products!: Product[];
+  products!: Product[]
 
   constructor (private productService: ProductService) {}
   ngOnInit (): void {
