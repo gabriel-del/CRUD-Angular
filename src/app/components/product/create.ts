@@ -5,6 +5,7 @@ import { ProductService } from './product.service';
   selector: 'app-create',
   template: `
   <p>Create Works!</p>
+  <button mat-raised-button (click)="createProduct()" color="primary">Salvar</button>
   `
 })
 export class Create implements OnInit{
@@ -13,8 +14,10 @@ export class Create implements OnInit{
 
 
   ngOnInit(): void {
-    this.productService.showOnConsole('Teste...123')
-    console.log(this.productService.array)
-    
+    // console.log(this.productService.array)
+  }
+
+  createProduct(): void {
+    this.productService.showMessage('Teste...123')
   }
 }
