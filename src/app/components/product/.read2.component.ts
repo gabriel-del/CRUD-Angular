@@ -2,7 +2,7 @@ import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { MatTable } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
-import { Read2DataSource, Read2Item } from './read2-datasource';
+import { Read2DataSource, Read2Item } from './.read2-datasource';
 
 @Component({
   selector: 'app-read2',

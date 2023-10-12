@@ -22,7 +22,7 @@ import { Create } from './components/product/create';
 import { Home } from './views/home'
 import { ProductCrud } from './views/product-crud';
 import { Read } from './components/product/read';
-import { Read2Component } from './components/product/read2.component';
+import { Read2Component } from './components/product/.read2.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
