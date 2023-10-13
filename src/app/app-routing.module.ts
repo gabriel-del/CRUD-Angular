@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { Home } from "./views/home"
-import { ProductCrud } from "./views/product-crud"
+import { ProductCrud } from "./views/product"
 import { Create } from './components/product/create';
 import { Update } from './components/product/update';
 import { Delete } from './components/product/delete';

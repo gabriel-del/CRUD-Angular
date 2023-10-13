@@ -22,7 +22,7 @@ import { Footer } from './components/template/footer';
 import { Nav } from './components/template/nav'
 import { Create } from './components/product/create';
 import { Home } from './views/home'
-import { ProductCrud } from './views/product-crud';
+import { ProductCrud } from './views/product';
 import { Read } from './components/product/read';
 import { Read2Component } from './components/product/.read2.component';
 import { MatTableModule } from '@angular/material/table';
