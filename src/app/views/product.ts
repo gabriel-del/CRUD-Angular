@@ -12,13 +12,11 @@ import { HeaderService } from '../components/template/header.service';
     </style>
 
   `})
-export class ProductCrud implements OnInit{
+export class ProductCrud  {
   constructor (private router: Router, private headerService: HeaderService) {
     headerService.headerData = {title: 'Cadastro de Produtos', icon: 'storefront', routeUrl: '/products'}
   }
 
-  ngOnInit(): void {
-  }
   navigateToProductCreate(): void {
     this.router.navigate(['/products/create'])
     }

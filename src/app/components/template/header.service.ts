@@ -8,8 +8,6 @@ import { BehaviorSubject } from 'rxjs';
 export class HeaderService {
   private _headerData = new BehaviorSubject<Header>({title: 'Início', icon: 'home', routeUrl: '' })
 
-  constructor() { }
-
   get headerData(): Header {
     return this._headerData.value
   } 

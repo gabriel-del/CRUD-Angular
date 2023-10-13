@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Product } from '../model';
 import { ProductService } from './product.service';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -29,7 +29,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styles: [
   ]
 })
-export class Delete {
+export class Delete implements OnInit {
   constructor(private productService: ProductService, private router: Router, private route: ActivatedRoute) {  }
   product: Product = {
     name: '',
