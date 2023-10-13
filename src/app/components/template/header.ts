@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HeaderService } from './header.service';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,7 @@ import { Component } from '@angular/core';
         <a routerLink="/"><img src="assets/img/logo.png" alt="logo"></a>
       </span>
       <span class="title">
-        <a><i class="material-icons">home</i>Início</a>
+        <a routerLink="{{ routeUrl }}"><i class="material-icons">{{ icon }}</i>{{ title }}</a>
       </span>
     </mat-toolbar>
 
@@ -20,6 +21,7 @@ import { Component } from '@angular/core';
         display:flex;
         align-items: center;
         text-decoration: none;
+        color: #333;
       } .logo img {
         max-height: 32px;
       } .title {
@@ -29,4 +31,9 @@ import { Component } from '@angular/core';
       }
     </style>`
 })
-export class Header {}
+export class Header {
+  constructor(private headerService: HeaderService) {}
+  get title(): string {return this.headerService.headerData.title }
+  get icon (): string {return this.headerService.headerData.icon }
+  get routeUrl(): string {return this.headerService.headerData.routeUrl }
+}
