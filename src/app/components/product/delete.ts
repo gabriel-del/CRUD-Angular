@@ -4,15 +4,15 @@ import { ProductService } from './product.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-update',
+  selector: 'app-delete',
   template: `
-  <mat-card>
-    <mat-card-title>Alterar Produto</mat-card-title>
+<mat-card>
+    <mat-card-title>Excluir Produto</mat-card-title>
     <form>
-      <mat-form-field><input matInput placeholder="Nome" [(ngModel)]="product.name"name="name"/></mat-form-field>
-      <mat-form-field><input matInput placeholder="Preço (R$)" [(ngModel)]="product.price" name="price"/></mat-form-field>
+      <mat-form-field><input matInput placeholder="Nome" [value]="product.name"name="name" disabled=""/></mat-form-field>
+      <mat-form-field><input matInput placeholder="Preço (R$)" [value]="product.price" name="price" disabled=""/></mat-form-field>
     </form>
-    <button mat-raised-button (click)="updateProduct()" color="primary">Atualizar</button>
+    <button mat-raised-button (click)="deleteProduct()" color="warn">Deletar</button>
     <button mat-raised-button (click)="cancel()" >Cancelar</button>
   </mat-card>
 
@@ -29,9 +29,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styles: [
   ]
 })
-export class Update {
-
-  
+export class Delete {
   product!: Product;
   constructor(private productService: ProductService, private router: Router, private route: ActivatedRoute) {  }
   ngOnInit(): void { 
@@ -41,9 +39,9 @@ export class Update {
     })
   }
 
-  updateProduct(): void { 
-    this.productService.update(this.product).subscribe(() => {
-      this.productService.showMessage('Produto atualizado!')
+  deleteProduct(): void { 
+    this.productService.delete(this.product.id!).subscribe(() => {
+      this.productService.showMessage('Produto deletado!')
       this.router.navigate(['products'])
     })
   }

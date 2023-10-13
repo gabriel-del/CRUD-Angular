@@ -29,6 +29,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { Update } from './components/product/update';
+import { Delete } from './components/product/delete';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { Update } from './components/product/update';
     Create,
     Read,
     Read2Component,
-    Update
+    Update,
+    Delete
   ],
   imports: [
     BrowserModule,

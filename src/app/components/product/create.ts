@@ -21,6 +21,7 @@ import { Product } from './model';
     form {
       display: flex;
       flex-direction: column;
+      margin-top: 20px;
     } button {
       margin: 20px 15px 0px 0px
     }

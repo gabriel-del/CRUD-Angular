@@ -22,7 +22,7 @@ import { Product } from './model';
           <th mat-header-cell *matHeaderCellDef>Ações</th>
           <td mat-cell *matCellDef="let row">
             <a routerLink="/products/update/{{ row.id }}"><i class="material-icons">edit</i></a>
-            <a routerLink=""><i class="material-icons">delete</i></a>
+            <a routerLink="/products/delete/{{ row.id }}"><i class="material-icons">delete</i></a>
           </td>
         </ng-container>
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
