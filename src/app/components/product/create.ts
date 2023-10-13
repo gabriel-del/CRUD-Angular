@@ -34,12 +34,7 @@ export class Create implements OnInit{
     name: '',
     price: null
   }
-
-
-
-  ngOnInit(): void {
-    // console.log(this.productService.array)
-  }
+  ngOnInit(): void { }
 
   createProduct(): void { 
     this.productService.create(this.product).subscribe(() => {
