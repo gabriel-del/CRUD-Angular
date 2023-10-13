@@ -28,6 +28,7 @@ import { Read2Component } from './components/product/.read2.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { Update } from './components/product/update';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { MatSortModule } from '@angular/material/sort';
     ProductCrud,
     Create,
     Read,
-    Read2Component
+    Read2Component,
+    Update
   ],
   imports: [
     BrowserModule,

@@ -21,7 +21,7 @@ import { Product } from './model';
         <ng-container matColumnDef="action">
           <th mat-header-cell *matHeaderCellDef>Ações</th>
           <td mat-cell *matCellDef="let row">
-            <a routerLink=""><i class="material-icons">edit</i></a>
+            <a routerLink="/products/update/{{ row.id }}"><i class="material-icons">edit</i></a>
             <a routerLink=""><i class="material-icons">delete</i></a>
           </td>
         </ng-container>
