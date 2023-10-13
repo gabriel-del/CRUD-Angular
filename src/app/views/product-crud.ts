@@ -6,7 +6,6 @@ import { Router } from '@angular/router'
   template: `
     <button mat-raised-button (click)="navigateToProductCreate()" color="primary">Novo produto</button>
     <app-read></app-read>
-    <app-read2></app-read2>
     <style>
       button {
         margin-bottom: 30px;
