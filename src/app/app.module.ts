@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -11,7 +11,9 @@ import {HttpClientModule} from '@angular/common/http'
 import {FormsModule }from '@angular/forms'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import {MatInputModule } from '@angular/material/input'
-
+import localePt from '@angular/common/locales/pt'
+import { registerLocaleData } from '@angular/common'
+registerLocaleData(localePt)
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -57,7 +59,10 @@ import { MatSortModule } from '@angular/material/sort';
     MatPaginatorModule,
     MatSortModule
   ],
-  providers: [],
+  providers: [{
+    provide: LOCALE_ID,
+    useValue: 'pt-BR'
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
