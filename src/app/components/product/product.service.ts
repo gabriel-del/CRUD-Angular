@@ -12,9 +12,10 @@ export class ProductService {
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
   showMessage(msg: string): void {
     this.snackBar.open(msg, 'X', {
-      duration: 3000,
+      duration: 3000000,
       horizontalPosition: 'right',
-      verticalPosition: 'top'
+      verticalPosition: 'top',
+      panelClass: ['msg-success']
     })
     }
   create(product: Product): Observable<Product> {
