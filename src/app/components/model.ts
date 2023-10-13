@@ -3,7 +3,7 @@ export interface Product {
   name: string
   price: number | null
 }
-export interface Header {
+export interface HeaderModel {
   title: string,
   icon: string,
   routeUrl: string

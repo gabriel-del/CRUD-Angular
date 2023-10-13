@@ -10,14 +10,10 @@ import { HeaderService } from '../components/template/header.service';
     <style>
       button {margin-bottom: 30px;}
     </style>
-
   `})
 export class ProductCrud  {
   constructor (private router: Router, private headerService: HeaderService) {
     headerService.headerData = {title: 'Cadastro de Produtos', icon: 'storefront', routeUrl: '/products'}
   }
-
-  navigateToProductCreate(): void {
-    this.router.navigate(['/products/create'])
-    }
+  navigateToProductCreate(): void { this.router.navigate(['/products/create'])}
 }
