@@ -21,10 +21,6 @@ import { HeaderService } from '../components/template/header.service';
 })
 export class Home {
   constructor(private headerService: HeaderService){
-    headerService.headerData = {
-      title: 'Início',
-      icon: 'home',
-      routeUrl: ''
-    }
+    headerService.headerData = {title: 'Início', icon: 'home', routeUrl: ''}
   }
 }
