@@ -2,7 +2,7 @@ import { MatFormField } from '@angular/material/form-field';
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from './product.service';
 import { Router } from '@angular/router'
-import { Product } from './model';
+import { Product } from '../model';
 
 @Component({
   selector: 'app-create',

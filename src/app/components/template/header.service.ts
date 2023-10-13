@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Header } from './header.model';
+import { Header } from '../model';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({

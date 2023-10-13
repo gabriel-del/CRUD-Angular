@@ -2,7 +2,7 @@ import { EMPTY, Observable, catchError, map } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar'
-import { Product } from './model';
+import { Product } from '../model';
 @Injectable({
   providedIn: 'root'
 })
