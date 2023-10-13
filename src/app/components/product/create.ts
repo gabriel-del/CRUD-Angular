@@ -20,13 +20,8 @@ import { Product } from '../model';
 })
 export class Create implements OnInit{
   constructor(private productService: ProductService, private router: Router) {  }
-
-  product: Product = {
-    name: '',
-    price: null
-  }
+  product: Product = {name: '', price: null}
   ngOnInit(): void { }
-
   createProduct(): void { 
     this.productService.create(this.product).subscribe(() => {
       this.productService.showMessage('Produto criado')

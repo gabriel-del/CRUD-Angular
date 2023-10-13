@@ -19,10 +19,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class Delete implements OnInit {
   constructor(private productService: ProductService, private router: Router, private route: ActivatedRoute) {  }
-  product: Product = {
-    name: '',
-    price: null
-  }
+  product: Product = {name: '', price: null}
+
   ngOnInit(): void { 
     const id = +this.route.snapshot.paramMap.get('id')!
     this.productService.readById(id).subscribe(product => {
