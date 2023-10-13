@@ -41,8 +41,8 @@ export class Update {
   }
 
   updateProduct(): void { 
-    this.productService.create(this.product).subscribe(() => {
-      this.productService.showMessage('Produto criado')
+    this.productService.update(this.product).subscribe(() => {
+      this.productService.showMessage('Produto atualizado!')
       this.router.navigate(['products'])
     })
   }
