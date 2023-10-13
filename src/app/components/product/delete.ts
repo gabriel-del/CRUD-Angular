@@ -15,19 +15,7 @@ import { ActivatedRoute, Router } from '@angular/router';
     <button mat-raised-button (click)="deleteProduct()" color="warn">Deletar</button>
     <button mat-raised-button (click)="cancel()" >Cancelar</button>
   </mat-card>
-
-  <style>
-    form {
-      display: flex;
-      flex-direction: column;
-      margin-top: 20px;
-    } button {
-      margin: 20px 15px 0px 0px
-    }
-  </style>
-  `,
-  styles: [
-  ]
+  `
 })
 export class Delete implements OnInit {
   constructor(private productService: ProductService, private router: Router, private route: ActivatedRoute) {  }

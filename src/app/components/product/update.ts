@@ -15,19 +15,7 @@ import { ActivatedRoute, Router } from '@angular/router';
     <button mat-raised-button (click)="updateProduct()" color="primary">Atualizar</button>
     <button mat-raised-button (click)="cancel()" >Cancelar</button>
   </mat-card>
-
-  <style>
-    form {
-      display: flex;
-      flex-direction: column;
-      margin-top: 20px;
-    } button {
-      margin: 20px 15px 0px 0px
-    }
-  </style>
-  `,
-  styles: [
-  ]
+  `
 })
 export class Update implements OnInit {
 

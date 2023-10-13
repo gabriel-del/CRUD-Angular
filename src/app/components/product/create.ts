@@ -16,16 +16,6 @@ import { Product } from '../model';
     <button mat-raised-button (click)="createProduct()" color="primary">Salvar</button>
     <button mat-raised-button (click)="cancel()" >Cancelar</button>
   </mat-card>
-
-  <style>
-    form {
-      display: flex;
-      flex-direction: column;
-      margin-top: 20px;
-    } button {
-      margin: 20px 15px 0px 0px
-    }
-  </style>
   `
 })
 export class Create implements OnInit{
