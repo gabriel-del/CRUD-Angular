@@ -12,7 +12,7 @@ import { ActivatedRoute, Router } from '@angular/router';
       <mat-form-field><input matInput placeholder="Nome" [(ngModel)]="product.name"name="name"/></mat-form-field>
       <mat-form-field><input matInput placeholder="Preço (R$)" [(ngModel)]="product.price" name="price"/></mat-form-field>
     </form>
-    <button mat-raised-button (click)="updateProduct()" color="primary">Salvar</button>
+    <button mat-raised-button (click)="updateProduct()" color="primary">Atualizar</button>
     <button mat-raised-button (click)="cancel()" >Cancelar</button>
   </mat-card>
 
