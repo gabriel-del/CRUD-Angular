@@ -5,8 +5,7 @@ import { Product } from './model';
 @Component({
   selector: 'app-read',
   template: `
-    <div class="mat-elevation-z4">
-      <table mat-table [dataSource]="products">
+      <table mat-table [dataSource]="products" class="mat-elevation-z4">
         <ng-container matColumnDef="id">
           <th mat-header-cell *matHeaderCellDef>Id</th>
           <td mat-cell *matCellDef="let row">{{row.id}}</td>
@@ -17,12 +16,11 @@ import { Product } from './model';
         </ng-container>
         <ng-container matColumnDef="price">
           <th mat-header-cell *matHeaderCellDef>Preço</th>
-          <td mat-cell *matCellDef="let row">{{row.price}}</td>
+          <td mat-cell *matCellDef="let row">{{row.price | currency: 'BRL' }}</td>
         </ng-container>
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
-    </div>
   `
 })
 export class Read implements OnInit {
