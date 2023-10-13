@@ -9,8 +9,11 @@ html, body { height: 100%;
 } .v-middle {
   vertical-align: middle;
 } .msg-success {
-  --mdc-snackbar-container-color: #28a745;
+  --mdc-snackbar-container-color: #28a745 !important;
   color: #fff;
-} 
+} .msg-error {
+  --mdc-snackbar-container-color: #e35e6b !important;
+  color: #fff;
+}
 
 
