@@ -1,17 +1,8 @@
-html, body { 
-  height: 100%; 
-} 
-body { 
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif; 
-} 
+html, body {height: 100%;} 
+body { margin: 0;  font-family: Roboto, "Helvetica Neue", sans-serif; } 
 
-.msg-success {
-  --mdc-snackbar-container-color: #28a745 !important;
-} 
-.msg-error {
-  --mdc-snackbar-container-color: #e35e6b !important;
-}
+.msg-success {--mdc-snackbar-container-color: #28a745 !important;} 
+.msg-error {--mdc-snackbar-container-color: #e35e6b !important;}
 
 mat-card {
   form {
