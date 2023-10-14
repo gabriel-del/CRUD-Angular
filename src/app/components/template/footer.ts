@@ -4,9 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-footer',
   template: `
     <mat-toolbar>
-      <span>
-        Desenvolvido com <i class="material-icons red v-middle">favorite</i> por <strong>Cod<span class="red">3</span>r</strong>
-      </span>
+        Desenvolvido com <i class="material-icons">favorite</i> por <strong>Cod<span>3</span>r</strong>
     </mat-toolbar>
     <style>
       mat-toolbar {
@@ -14,10 +12,12 @@ import { Component } from '@angular/core';
         bottom: 0;
         display: flex;
         justify-content: flex-end;
-      } span {
         font-size: 1.1rem;
         font-weight: 300;
       }
+      i, span { color: rgb(227,94,107);}
+      i, strong { margin: 5px;}
+      i { vertical-align: middle;} 
     </style>
   `
 })
