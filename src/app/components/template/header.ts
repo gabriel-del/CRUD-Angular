@@ -7,7 +7,7 @@ import { HeaderModel } from '../model';
   template: `
     <mat-toolbar class="mat-elevation-z4">
       <span class="logo">
-        <a routerLink="/"><img src="assets/img/logo.png" alt="logo"></a>
+        <a routerLink="/"><img src="assets/img/logo3.png" alt="logo"></a>
       </span>
       <span class="title">
         <a routerLink="{{ headerData.routeUrl }}"><i class="material-icons">{{ headerData.icon }}</i>{{ headerData.title }}</a>
@@ -24,7 +24,9 @@ import { HeaderModel } from '../model';
         text-decoration: none;
         color: #333;
       } .logo img {
-        max-height: 32px;
+        /* max-height: 32px; */
+        width: 100px;
+        /* background-color: black; */
       } .title {
         padding-left: 25px;
       } .title i {

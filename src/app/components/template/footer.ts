@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-footer',
   template: `
     <mat-toolbar>
-        Desenvolvido com <i class="material-icons">favorite</i> por <strong>Cod<span>3</span>r</strong>
+        Desenvolvido com <i class="material-icons">favorite</i>
+         <!-- por <strong>Cod<span>3</span>r</strong> -->
     </mat-toolbar>
     <style>
       mat-toolbar {
